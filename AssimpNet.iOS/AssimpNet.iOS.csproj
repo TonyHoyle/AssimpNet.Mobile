@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{841F2A08-D210-4655-B132-A1F3B85B5E96}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{a52b8a63-bc84-4b47-910d-692533484892}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AssimpNet</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>AssimpNet</AssemblyName>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="NativeLibraryLoader\obj\**" />
+    <None Remove="bin\**" />
+    <None Remove="NativeLibraryLoader\obj\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssimpNet\Animation.cs" />
+    <Compile Include="..\AssimpNet\AssimpException.cs" />
+    <Compile Include="..\AssimpNet\AssimpContext.cs" />
+    <Compile Include="..\AssimpNet\Bone.cs" />
+    <Compile Include="..\AssimpNet\Camera.cs" />
+    <Compile Include="..\AssimpNet\Color3D.cs" />
+    <Compile Include="..\AssimpNet\Color4D.cs" />
+    <Compile Include="..\AssimpNet\Configs\PropertyConfig.cs" />
+    <Compile Include="..\AssimpNet\NativeLibraryLoader\Kernel32.cs" />
+    <Compile Include="..\AssimpNet\NativeLibraryLoader\Libdl.cs" />
+    <Compile Include="..\AssimpNet\NativeLibraryLoader\LibraryLoader.cs" />
+    <Compile Include="..\AssimpNet\NativeLibraryLoader\NativeLibrary.cs" />
+    <Compile Include="..\AssimpNet\NativeLibraryLoader\PathResolver.cs" />
+	<Compile Include="..\AssimpNet\NativeLibraryLoader\SymbolLoadingException.cs" />
+	<Compile Include="..\AssimpNet\NativeLibraryLoader\DefaultPathResolver.cs" />
+	<Compile Include="..\AssimpNet\NativeLibraryLoader\Libc.cs" />
+	<Compile Include="..\AssimpNet\NativeMarshalerAttribute.cs" />
+    <Compile Include="..\AssimpNet\FileIOSystem.cs" />
+    <Compile Include="..\AssimpNet\Enums.cs" />
+    <Compile Include="..\AssimpNet\ExportDataBlob.cs" />
+    <Compile Include="..\AssimpNet\ExportFormatDescription.cs" />
+    <Compile Include="..\AssimpNet\Face.cs" />
+    <Compile Include="..\AssimpNet\Interfaces.cs" />
+    <Compile Include="..\AssimpNet\InternalInterop.cs" />
+    <Compile Include="..\AssimpNet\IOStream.cs" />
+    <Compile Include="..\AssimpNet\IOSystem.cs" />
+    <Compile Include="..\AssimpNet\Material.cs" />
+    <Compile Include="..\AssimpNet\MaterialProperty.cs" />
+    <Compile Include="..\AssimpNet\MeshAnimationChannel.cs" />
+    <Compile Include="..\AssimpNet\MeshAnimationAttachment.cs" />
+    <Compile Include="..\AssimpNet\MeshKey.cs" />
+    <Compile Include="..\AssimpNet\Metadata.cs" />
+    <Compile Include="..\AssimpNet\NodeAnimationChannel.cs" />
+    <Compile Include="..\AssimpNet\NodeCollection.cs" />
+    <Compile Include="..\AssimpNet\QuaternionKey.cs" />
+    <Compile Include="..\AssimpNet\Texel.cs" />
+    <Compile Include="..\AssimpNet\EmbeddedTexture.cs" />
+    <Compile Include="..\AssimpNet\TextureSlot.cs" />
+    <Compile Include="..\AssimpNet\Unmanaged\AiMatKeys.cs" />
+    <Compile Include="..\AssimpNet\Unmanaged\AssimpLibrary.cs" />
+    <Compile Include="..\AssimpNet\UVTransform.cs" />
+    <Compile Include="..\AssimpNet\VectorKey.cs" />
+    <Compile Include="..\AssimpNet\Light.cs" />
+    <Compile Include="..\AssimpNet\LogStream.cs" />
+    <Compile Include="..\AssimpNet\Matrix3x3.cs" />
+    <Compile Include="..\AssimpNet\Matrix4x4.cs" />
+    <Compile Include="..\AssimpNet\MemoryHelper.cs" />
+    <Compile Include="..\AssimpNet\Mesh.cs" />
+    <Compile Include="..\AssimpNet\Node.cs" />
+    <Compile Include="..\AssimpNet\PostProcessPreset.cs" />
+    <Compile Include="..\AssimpNet\Scene.cs" />
+    <Compile Include="..\AssimpNet\Plane.cs" />
+    <Compile Include="..\AssimpNet\Properties\AssemblyInfo.cs" />
+    <Compile Include="..\AssimpNet\Quaternion.cs" />
+    <Compile Include="..\AssimpNet\Ray.cs" />
+    <Compile Include="..\AssimpNet\Unmanaged\AiConfigs.cs" />
+    <Compile Include="..\AssimpNet\Unmanaged\AiDefines.cs" />
+    <Compile Include="..\AssimpNet\Unmanaged\UnmanagedStructures.cs" />
+    <Compile Include="..\AssimpNet\Vector2D.cs" />
+    <Compile Include="..\AssimpNet\Vector3D.cs" />
+    <Compile Include="..\AssimpNet\VertexWeight.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\AssimpNet\AssimpLicense.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\AssimpNet\AssimpKey.snk" />
+    <None Include="..\AssimpNet\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="Native References/libassimp-fat.a">
+      <Kind>Static</Kind>
+      <ForceLoad>True</ForceLoad>
+      <NeedsGccExceptionHandling>True</NeedsGccExceptionHandling>
+      <IsCxx>True</IsCxx>
+      <SmartLink>True</SmartLink>
+    </NativeReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)AssimpNet.Interop.Generator\bin\$(Configuration)\AssimpNet.Interop.Generator.exe" "$(TargetDir)$(TargetFileName)" "$(ProjectDir)AssimpKey.snk"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

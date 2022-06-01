@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssimpNet", "AssimpNet\AssimpNet.csproj", "{3415FF29-C0BE-44FC-AD34-94796118E690}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0} = {EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssimpNet.Test", "AssimpNet.Test\AssimpNet.Test.csproj", "{72D6BF28-1217-405E-BE22-DFDFC37BC805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssimpNet.Sample", "AssimpNet.Sample\AssimpNet.Sample.csproj", "{67282517-89C5-4F57-AF65-D80E8B16BB95}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3415FF29-C0BE-44FC-AD34-94796118E690} = {3415FF29-C0BE-44FC-AD34-94796118E690}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssimpNet.Interop.Generator", "AssimpNet.Interop.Generator\AssimpNet.Interop.Generator.csproj", "{EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssimpNet.iOS", "AssimpNet.iOS\AssimpNet.iOS.csproj", "{841F2A08-D210-4655-B132-A1F3B85B5E96}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0} = {EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssimpNet.Android", "AssimpNet.Android\AssimpNet.Android.csproj", "{594256EC-4797-4E6D-A8FF-CADA5A47157C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0} = {EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3415FF29-C0BE-44FC-AD34-94796118E690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3415FF29-C0BE-44FC-AD34-94796118E690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3415FF29-C0BE-44FC-AD34-94796118E690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3415FF29-C0BE-44FC-AD34-94796118E690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D6BF28-1217-405E-BE22-DFDFC37BC805}.Debug|Any CPU.ActiveCfg = Net45-Debug|Any CPU
+		{72D6BF28-1217-405E-BE22-DFDFC37BC805}.Debug|Any CPU.Build.0 = Net45-Debug|Any CPU
+		{72D6BF28-1217-405E-BE22-DFDFC37BC805}.Release|Any CPU.ActiveCfg = Net45-Release|Any CPU
+		{72D6BF28-1217-405E-BE22-DFDFC37BC805}.Release|Any CPU.Build.0 = Net45-Release|Any CPU
+		{67282517-89C5-4F57-AF65-D80E8B16BB95}.Debug|Any CPU.ActiveCfg = Net45-Debug|Any CPU
+		{67282517-89C5-4F57-AF65-D80E8B16BB95}.Debug|Any CPU.Build.0 = Net45-Debug|Any CPU
+		{67282517-89C5-4F57-AF65-D80E8B16BB95}.Release|Any CPU.ActiveCfg = Net45-Release|Any CPU
+		{67282517-89C5-4F57-AF65-D80E8B16BB95}.Release|Any CPU.Build.0 = Net45-Release|Any CPU
+		{EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA4EF0BE-B8A9-4149-8B5A-7E353AD628C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841F2A08-D210-4655-B132-A1F3B85B5E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841F2A08-D210-4655-B132-A1F3B85B5E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841F2A08-D210-4655-B132-A1F3B85B5E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841F2A08-D210-4655-B132-A1F3B85B5E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{594256EC-4797-4E6D-A8FF-CADA5A47157C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594256EC-4797-4E6D-A8FF-CADA5A47157C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594256EC-4797-4E6D-A8FF-CADA5A47157C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594256EC-4797-4E6D-A8FF-CADA5A47157C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EA37287-132C-40AE-B8FB-C6F8CC9780EA}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal
