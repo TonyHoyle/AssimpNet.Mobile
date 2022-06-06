@@ -2,19 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>AssimpNet.Mobile</id>
-        <version>5.0.0-rc1</version>
+        <version>5.0.0</version>
         <title>AssimpNet</title>
-        <owner>Nicholas Woodfield</owner>
         <authors>Nicholas Woodfield,Tony Hoyle</authors>
         <license type="expression">MIT</license>
-        <projectUrl>https://bitbucket.org/Starnick/assimpnet</projectUrl>
+        <projectUrl>https://github.com/TonyHoyle/AssimpNet.Mobile</projectUrl>
         <icon>logo.png</icon>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<summary>A .NET Wrapper for the Open Asset Import (Assimp) library.</summary>
-        <description>A .NET Wrapper for the Open Asset Import (Assimp) library. The library is able to import dozens of different 3D model formats (e.g. OBJ, FBX, Collada) and export to several formats (e.g. OBJ, Collada). This release targets version 3.1.1 of the native library.</description>
+	<summary>Unnoficial mobile port of AssimpNet - A .NET Wrapper for the Open Asset Import (Assimp) library.</summary>
+        <description>A .NET Wrapper for the Open Asset Import (Assimp) library. The library is able to import dozens of different 3D model formats (e.g. OBJ, FBX, Collada) and export to several formats (e.g. OBJ, Collada). This release targets version 5.0.0 of the native library.  Original source at https://bitbucket.org/Starnick/assimpnet/src/master/</description>
         <copyright>Copyright (c) 2012-2020 AssimpNet - Nicholas Woodfield</copyright>
         <language>en-US</language>
-        <tags>Model 3D Assimp Mesh Importers Content Assets FBX Collada</tags>
+        <tags>Model 3D Assimp Mesh Importers Content Assets FBX Collada iOS Android Mobile</tags>
         <frameworkAssemblies>
             <frameworkAssembly assemblyName="System" targetFramework=""/>
         </frameworkAssemblies>
@@ -33,10 +32,10 @@
                 
       <!-- MonoAndroid -->
         <file src="AssimpNet.Android\bin\Release\AssimpNet.dll" target="lib\MonoAndroid10\AssimpNet.dll"/>
-        <file src="AssimpNet.Android\lib\arm64-v8a\libassimp.so.5" target="content\MonoAndroid10\lib\arm64-v8a\libassimp.so.5"/>
-        <file src="AssimpNet.Android\lib\armeabi-v7a\libassimp.so.5" target="content\MonoAndroid10\lib\armeabi-v7a\libassimp.so.5"/>
-        <file src="AssimpNet.Android\lib\x86\libassimp.so.5" target="content\MonoAndroid10\lib\x86\libassimp.so.5"/>
-        <file src="AssimpNet.Android\lib\x86_64\libassimp.so.5" target="content\MonoAndroid10\lib\x86_64\libassimp.so.5"/>
+        <file src="AssimpNet.Android\lib\arm64-v8a\libassimp.so" target="content\MonoAndroid10\lib\arm64-v8a\libassimp.so"/>
+        <file src="AssimpNet.Android\lib\armeabi-v7a\libassimp.so" target="content\MonoAndroid10\lib\armeabi-v7a\libassimp.so"/>
+        <file src="AssimpNet.Android\lib\x86\libassimp.so" target="content\MonoAndroid10\lib\x86\libassimp.so"/>
+        <file src="AssimpNet.Android\lib\x86_64\libassimp.so" target="content\MonoAndroid10\lib\x86_64\libassimp.so"/>
         
       <!-- iOs -->
         <file src="AssimpNet.iOS\bin\Release\AssimpNet.dll" target="lib\Xamarin.iOS10\AssimpNet.dll"/>
