@@ -10,13 +10,12 @@
     <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AssimpNet</RootNamespace>
+    <RootNamespace>Assimp</RootNamespace>
     <AssemblyName>AssimpNet</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
     <AndroidUseAapt2>true</AndroidUseAapt2>
   </PropertyGroup>
@@ -29,6 +28,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latestmajor</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>portable</DebugType>
@@ -38,6 +38,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latestmajor</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -50,28 +51,219 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="..\external\assimpnet\AssimpNet\Animation.cs">
+      <Link>Animation.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\AssimpContext.cs">
+      <Link>AssimpContext.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\AssimpException.cs">
+      <Link>AssimpException.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Bone.cs">
+      <Link>Bone.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\BoundingBox.cs">
+      <Link>BoundingBox.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Camera.cs">
+      <Link>Camera.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Color3D.cs">
+      <Link>Color3D.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Color4D.cs">
+      <Link>Color4D.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\EmbeddedTexture.cs">
+      <Link>EmbeddedTexture.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Enums.cs">
+      <Link>Enums.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\ExportDataBlob.cs">
+      <Link>ExportDataBlob.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\ExportFormatDescription.cs">
+      <Link>ExportFormatDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Face.cs">
+      <Link>Face.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\FileIOSystem.cs">
+      <Link>FileIOSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\ImporterDescription.cs">
+      <Link>ImporterDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Interfaces.cs">
+      <Link>Interfaces.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\IOStream.cs">
+      <Link>IOStream.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\IOSystem.cs">
+      <Link>IOSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Light.cs">
+      <Link>Light.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\LogStream.cs">
+      <Link>LogStream.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Material.cs">
+      <Link>Material.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\MaterialProperty.cs">
+      <Link>MaterialProperty.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Matrix3x3.cs">
+      <Link>Matrix3x3.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Matrix4x4.cs">
+      <Link>Matrix4x4.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Mesh.cs">
+      <Link>Mesh.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\MeshAnimationAttachment.cs">
+      <Link>MeshAnimationAttachment.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\MeshAnimationChannel.cs">
+      <Link>MeshAnimationChannel.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\MeshKey.cs">
+      <Link>MeshKey.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\MeshMorphAnimationChannel.cs">
+      <Link>MeshMorphAnimationChannel.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\MeshMorphKey.cs">
+      <Link>MeshMorphKey.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Metadata.cs">
+      <Link>Metadata.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\NativeMarshalerAttribute.cs">
+      <Link>NativeMarshalerAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Node.cs">
+      <Link>Node.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\NodeAnimationChannel.cs">
+      <Link>NodeAnimationChannel.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\NodeCollection.cs">
+      <Link>NodeCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Plane.cs">
+      <Link>Plane.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\PostProcessPreset.cs">
+      <Link>PostProcessPreset.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Quaternion.cs">
+      <Link>Quaternion.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\QuaternionKey.cs">
+      <Link>QuaternionKey.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Ray.cs">
+      <Link>Ray.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Scene.cs">
+      <Link>Scene.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Texel.cs">
+      <Link>Texel.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\TextureSlot.cs">
+      <Link>TextureSlot.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\UVTransform.cs">
+      <Link>UVTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Vector2D.cs">
+      <Link>Vector2D.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Vector3D.cs">
+      <Link>Vector3D.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\VectorKey.cs">
+      <Link>VectorKey.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\VertexWeight.cs">
+      <Link>VertexWeight.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Configs\PropertyConfig.cs">
+      <Link>Configs\PropertyConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\AiConfigs.cs">
+      <Link>Unmanaged\AiConfigs.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\AiDefines.cs">
+      <Link>Unmanaged\AiDefines.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\AiMatKeys.cs">
+      <Link>Unmanaged\AiMatKeys.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\AssimpLibrary.cs">
+      <Link>Unmanaged\AssimpLibrary.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\PlatformHelper.cs">
+      <Link>Unmanaged\PlatformHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\UnmanagedFunctionNameAttribute.cs">
+      <Link>Unmanaged\UnmanagedFunctionNameAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\UnmanagedLibraryImplementation.cs">
+      <Link>Unmanaged\UnmanagedLibraryImplementation.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\UnmanagedLibraryResolver.cs">
+      <Link>Unmanaged\UnmanagedLibraryResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\UnmanagedStructures.cs">
+      <Link>Unmanaged\UnmanagedStructures.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\Platforms\UnmanagedLinuxLibc6LibraryImplementation.cs">
+      <Link>Unmanaged\Platforms\UnmanagedLinuxLibc6LibraryImplementation.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\Platforms\UnmanagedLinuxLibdlLibraryImplementation.cs">
+      <Link>Unmanaged\Platforms\UnmanagedLinuxLibdlLibraryImplementation.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\Platforms\UnmanagedMacLibraryImplementation.cs">
+      <Link>Unmanaged\Platforms\UnmanagedMacLibraryImplementation.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\Platforms\UnmanagedUwpLibraryImplementation.cs">
+      <Link>Unmanaged\Platforms\UnmanagedUwpLibraryImplementation.cs</Link>
+    </Compile>
+    <Compile Include="..\external\assimpnet\AssimpNet\Unmanaged\Platforms\UnmanagedWin32LibraryImplementation.cs">
+      <Link>Unmanaged\Platforms\UnmanagedWin32LibraryImplementation.cs</Link>
+    </Compile>
+    <Compile Include="Unmanaged\Platforms\UnmamagedIosLibraryImplementation.cs" />
+    <Compile Include="Unmanaged\Platforms\UnmanagedAndroidLibraryImplelemtation.cs" />
+    <Compile Include="Unmanaged\Platform.cs" />
+    <Compile Include="Unmanaged\UnmanagedLibrary.cs" />
+    <Compile Include="..\external\assimpnet\AssimpNet\MemoryHelper.cs">
+      <Link>MemoryHelper.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <AndroidNativeLibrary Include="lib\arm64-v8a\libassimp.so.5">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidNativeLibrary>
-    <AndroidNativeLibrary Include="lib\armeabi-v7a\libassimp.so.5">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidNativeLibrary>
-    <AndroidNativeLibrary Include="lib\x86_64\libassimp.so.5">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidNativeLibrary>
-    <AndroidNativeLibrary Include="lib\x86\libassimp.so.5">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidNativeLibrary>
+    <PackageReference Include="MemoryInterop.ILPatcher">
+      <Version>2.2.1</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
     <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\values\" />
+    <Folder Include="lib\arm64-v8a\" />
+    <Folder Include="lib\armeabi-v7a\" />
+    <Folder Include="lib\x86\" />
+    <Folder Include="Configs\" />
+    <Folder Include="Unmanaged\" />
+    <Folder Include="Unmanaged\Platforms\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
@@ -81,82 +273,18 @@
     <None Remove="NativeLibraryLoader\obj\**" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\AssimpNet\Animation.cs" />
-    <Compile Include="..\AssimpNet\AssimpException.cs" />
-    <Compile Include="..\AssimpNet\AssimpContext.cs" />
-    <Compile Include="..\AssimpNet\Bone.cs" />
-    <Compile Include="..\AssimpNet\Camera.cs" />
-    <Compile Include="..\AssimpNet\Color3D.cs" />
-    <Compile Include="..\AssimpNet\Color4D.cs" />
-    <Compile Include="..\AssimpNet\Configs\PropertyConfig.cs" />
-    <Compile Include="..\AssimpNet\NativeLibraryLoader\Kernel32.cs" />
-    <Compile Include="..\AssimpNet\NativeLibraryLoader\Libdl.cs" />
-    <Compile Include="..\AssimpNet\NativeLibraryLoader\LibraryLoader.cs" />
-    <Compile Include="..\AssimpNet\NativeLibraryLoader\NativeLibrary.cs" />
-	<Compile Include="..\AssimpNet\NativeLibraryLoader\SymbolLoadingException.cs" />
-	<Compile Include="..\AssimpNet\NativeLibraryLoader\DefaultPathResolver.cs" />
-	<Compile Include="..\AssimpNet\NativeLibraryLoader\Libc.cs" />
-    <Compile Include="..\AssimpNet\NativeLibraryLoader\PathResolver.cs" />
-    <Compile Include="..\AssimpNet\NativeMarshalerAttribute.cs" />
-    <Compile Include="..\AssimpNet\FileIOSystem.cs" />
-    <Compile Include="..\AssimpNet\Enums.cs" />
-    <Compile Include="..\AssimpNet\ExportDataBlob.cs" />
-    <Compile Include="..\AssimpNet\ExportFormatDescription.cs" />
-    <Compile Include="..\AssimpNet\Face.cs" />
-    <Compile Include="..\AssimpNet\Interfaces.cs" />
-    <Compile Include="..\AssimpNet\InternalInterop.cs" />
-    <Compile Include="..\AssimpNet\IOStream.cs" />
-    <Compile Include="..\AssimpNet\IOSystem.cs" />
-    <Compile Include="..\AssimpNet\Material.cs" />
-    <Compile Include="..\AssimpNet\MaterialProperty.cs" />
-    <Compile Include="..\AssimpNet\MeshAnimationChannel.cs" />
-    <Compile Include="..\AssimpNet\MeshAnimationAttachment.cs" />
-    <Compile Include="..\AssimpNet\MeshKey.cs" />
-    <Compile Include="..\AssimpNet\Metadata.cs" />
-    <Compile Include="..\AssimpNet\NodeAnimationChannel.cs" />
-    <Compile Include="..\AssimpNet\NodeCollection.cs" />
-    <Compile Include="..\AssimpNet\QuaternionKey.cs" />
-    <Compile Include="..\AssimpNet\Texel.cs" />
-    <Compile Include="..\AssimpNet\EmbeddedTexture.cs" />
-    <Compile Include="..\AssimpNet\TextureSlot.cs" />
-    <Compile Include="..\AssimpNet\Unmanaged\AiMatKeys.cs" />
-    <Compile Include="..\AssimpNet\Unmanaged\AssimpLibrary.cs" />
-    <Compile Include="..\AssimpNet\UVTransform.cs" />
-    <Compile Include="..\AssimpNet\VectorKey.cs" />
-    <Compile Include="..\AssimpNet\Light.cs" />
-    <Compile Include="..\AssimpNet\LogStream.cs" />
-    <Compile Include="..\AssimpNet\Matrix3x3.cs" />
-    <Compile Include="..\AssimpNet\Matrix4x4.cs" />
-    <Compile Include="..\AssimpNet\MemoryHelper.cs" />
-    <Compile Include="..\AssimpNet\Mesh.cs" />
-    <Compile Include="..\AssimpNet\Node.cs" />
-    <Compile Include="..\AssimpNet\PostProcessPreset.cs" />
-    <Compile Include="..\AssimpNet\Scene.cs" />
-    <Compile Include="..\AssimpNet\Plane.cs" />
-    <Compile Include="..\AssimpNet\Properties\AssemblyInfo.cs" />
-    <Compile Include="..\AssimpNet\Quaternion.cs" />
-    <Compile Include="..\AssimpNet\Ray.cs" />
-    <Compile Include="..\AssimpNet\Unmanaged\AiConfigs.cs" />
-    <Compile Include="..\AssimpNet\Unmanaged\AiDefines.cs" />
-    <Compile Include="..\AssimpNet\Unmanaged\UnmanagedStructures.cs" />
-    <Compile Include="..\AssimpNet\Vector2D.cs" />
-    <Compile Include="..\AssimpNet\Vector3D.cs" />
-    <Compile Include="..\AssimpNet\VertexWeight.cs" />
+    <None Include="lib\x86_64\libassimp.so" />
+    <None Include="lib\x86\libassimp.so" />
+    <None Include="lib\armeabi-v7a\libassimp.so" />
+    <None Include="lib\arm64-v8a\libassimp.so" />
+    <None Include="..\external\assimpnet\AssimpNet\AssimpKey.snk">
+      <Link>AssimpKey.snk</Link>
+    </None>
+    <None Include="..\external\assimpnet\AssimpNet\AssimpNet.csproj">
+      <Link>AssimpNet.csproj</Link>
+    </None>
+    <None Include="..\external\assimpnet\AssimpNet\AssimpNet.targets">
+      <Link>AssimpNet.targets</Link>
+    </None>
   </ItemGroup>
-  <ItemGroup>
-    <AdditionalFiles Include="..\AssimpNet\AssimpLicense.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AdditionalFiles>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\AssimpNet\AssimpKey.snk" />
-    <None Include="..\AssimpNet\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" />
-    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="6.0.0" />
-  </ItemGroup>
-  <PropertyGroup>
-    <PostBuildEvent>"D:\Rps\AssimpNet\AssimpNet.Interop.Generator\bin\Release\AssimpNet.Interop.Generator.exe" "$(TargetDir)$(TargetFileName)" "$(ProjectDir)AssimpKey.snk"</PostBuildEvent>
-  </PropertyGroup>
 </Project>
