@@ -39,6 +39,7 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latestmajor</LangVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -267,18 +268,10 @@
     <None Remove="NativeLibraryLoader\obj\**" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidNativeLibrary Include="lib\x86_64\libassimp.so">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidNativeLibrary>
-    <AndroidNativeLibrary Include="lib\x86\libassimp.so">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidNativeLibrary>
-    <AndroidNativeLibrary Include="lib\armeabi-v7a\libassimp.so">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidNativeLibrary>
-    <AndroidNativeLibrary Include="lib\arm64-v8a\libassimp.so">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidNativeLibrary>
+    <None Include="lib\x86_64\libassimp.so" />
+    <None Include="lib\x86\libassimp.so" />
+    <None Include="lib\armeabi-v7a\libassimp.so" />
+    <None Include="lib\arm64-v8a\libassimp.so" />
     <None Include="..\external\assimpnet\AssimpNet\AssimpKey.snk">
       <Link>AssimpKey.snk</Link>
     </None>
